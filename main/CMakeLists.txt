@@ -1,3 +1,3 @@
-idf_component_register(SRCS "PlantCare_Central_Distributor.c" "./services/bluetoothService/Bluetooth_Service.c" "./services/NvsService/NVS_Service.c" "./services/WifiService/WIFI_Service.c" "./services/adcService/Adc_Service.c"
-        INCLUDE_DIRS "." "./services/bluetoothService" "./services/NvsService" "./services/WifiService" "./services/adcService"
-        REQUIRES bt nvs_flash driver esp_wifi esp_http_client esp_adc)
+idf_component_register(SRCS "PlantCare_Central_Distributor.c" "./services/bluetoothService/Bluetooth_Service.c" "./services/NvsService/NVS_Service.c" "./services/WifiService/WIFI_Service.c" "./services/GpioService/GPIO_Service.c" "./services/PlantService/Plant_Service.c"
+        INCLUDE_DIRS "." "./services/bluetoothService" "./services/NvsService" "./services/WifiService" "./services/GpioService" "./services/PlantService"
+        REQUIRES bt nvs_flash driver esp_wifi esp_http_client esp_driver_gpio)

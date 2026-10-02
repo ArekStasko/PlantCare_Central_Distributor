@@ -1,0 +1,39 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/arekstasko/sources/repos/PlantCare_Central_Distributer/build/bootloader/esp-idf/esptool_py && /home/arekstasko/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/arekstasko/sources/repos/PlantCare_Central_Distributer/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/services/WifiService/WIFI_Service.c.obj
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c: In function 'save_error_code_to_nvs':
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:28:38: warning: passing argument 3 of 'nvs_set_str' makes pointer from integer without a cast [-Wint-conversion]
+   28 |     nvs_set_str(nvs_handle, "error", error_code);
+      |                                      ^~~~~~~~~~
+      |                                      |
+      |                                      esp_err_t {aka int}
+In file included from /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/nvs_flash/include/nvs_flash.h:13,
+                 from /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/NvsService/NVS_Service.h:7,
+                 from /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:9:
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/nvs_flash/include/nvs.h:311:74: note: expected 'const char *' but argument is of type 'esp_err_t' {aka 'int'}
+  311 | esp_err_t nvs_set_str (nvs_handle_t handle, const char* key, const char* value);
+      |                                                              ~~~~~~~~~~~~^~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c: In function 'wifi_event_handler':
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:109:37: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  109 |                         xTaskCreate(get_water_supply_status, "get_water_supply_status", 8192, NULL, 5, NULL);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                     |
+      |                                     void (*)(void)
+In file included from /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/esp_additions/include/freertos/idf_additions.h:20,
+                 from /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:2:
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:371:44: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(void)'
+  371 |     BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable PlantCare_Central_Distributor.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/arekstasko/sources/repos/PlantCare_Central_Distributer/build/PlantCare_Central_Distributor.bin
+[7/7] cd /home/arekstasko/sources/repos/PlantCare_Central_Distributer/build/esp-idf/esptool_py && /home/arekstasko/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/arekstasko/sources/repos/PlantCare_Central_Distributer/build/partition_table/partition-table.bin /home/arekstasko/sources/repos/PlantCare_Central_Distributer/build/PlantCare_Central_Distributor.bin
+PlantCare_Central_Distributor.bin binary size 0xfe940 bytes. Smallest app partition is 0x177000 bytes. 0x786c0 bytes (32%) free.

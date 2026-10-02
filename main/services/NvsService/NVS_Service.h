@@ -14,5 +14,9 @@ char* getWifiPassword(void);
 char* getModuleId(void);
 char* getErrorCode(void);
 void resetWifiData(void);
+void saveStatusId(char* status_id);
+char* getStatusId(void);
+void savePlantId(char* plant_id);
+char* getPlantId();
 
 #endif //NVS_SERVICE_H

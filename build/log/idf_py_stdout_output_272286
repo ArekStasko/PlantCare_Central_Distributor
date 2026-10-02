@@ -1,0 +1,706 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/arekstasko/sources/repos/PlantCare_Central_Distributer/build/bootloader/esp-idf/esptool_py && /home/arekstasko/.espressif/python_env/idf5.3_py3.10_env/bin/python /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/arekstasko/sources/repos/PlantCare_Central_Distributer/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/services/WifiService/WIFI_Service.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/services/WifiService/WIFI_Service.c.obj 
+/home/arekstasko/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.3.1-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/build/config -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/bluetoothService -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/NvsService -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/GpioService -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/PlantService -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/platform_include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/config/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/config/include/freertos -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/config/xtensa/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/esp_additions/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/include/soc -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/include/soc/esp32 -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/dma/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/ldo/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/. -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/heap/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/log/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/soc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/soc/esp32 -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/soc/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/hal/platform_port/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/hal/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/hal/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_rom/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_rom/include/esp32 -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_rom/esp32 -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_common/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/soc -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/include/private -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/deprecated_include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/include/apps -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/include/apps/sntp -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/lwip/src/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/port/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/port/freertos/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/port/esp32xx/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/port/esp32xx/include/arch -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/port/esp32xx/include/sys -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/include/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/common/osi/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/common/api/include/api -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/common/btc/profile/esp/blufi/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/common/btc/profile/esp/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/common/hci_log/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/common/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/common/tinycrypt/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/core -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/core/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/core/storage -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/btc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/models/common/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/models/client/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/models/server/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/api/core/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/api/models/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/api -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/lib/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/v1.1/api/core/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/v1.1/api/models/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/v1.1/btc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/ans/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/bas/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/dis/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/gap/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/gatt/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/hr/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/htp/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/ias/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/ipss/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/lls/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/prox/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/cts/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/tps/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/hid/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/sps/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/util/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/store/ram/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/store/config/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/porting/nimble/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/port/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/transport/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/porting/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/porting/npl/freertos/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/esp-hci/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_timer/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/wifi_apps/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/wifi_apps/nan_app/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/include/local -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_event/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_phy/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_phy/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/nvs_flash/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/spi_flash/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_partition/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/driver/deprecated -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/driver/i2c/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/driver/touch_sensor/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/driver/twai/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/driver/touch_sensor/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_pm/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_ringbuf/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_gpio/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_pcnt/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_gptimer/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_spi/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_mcpwm/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_ana_cmpr/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_i2s/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_sdmmc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/sdmmc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_sdspi/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_sdio/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_dac/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_rmt/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_tsens/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_sdm/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_i2c/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_uart/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/vfs/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_ledc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_parlio/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_usb_serial_jtag/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_http_client/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Os -freorder-blocks -fmacro-prefix-map=/home/arekstasko/sources/repos/PlantCare_Central_Distributer=. -fmacro-prefix-map=/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/services/WifiService/WIFI_Service.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/services/WifiService/WIFI_Service.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/services/WifiService/WIFI_Service.c.obj -c /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c: In function 'save_error_code_to_nvs':
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:74:38: warning: passing argument 3 of 'nvs_set_str' makes pointer from integer without a cast [-Wint-conversion]
+   74 |     nvs_set_str(nvs_handle, "error", error_code);
+      |                                      ^~~~~~~~~~
+      |                                      |
+      |                                      esp_err_t {aka int}
+In file included from /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/nvs_flash/include/nvs_flash.h:13,
+                 from /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/NvsService/NVS_Service.h:7,
+                 from /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:9:
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/nvs_flash/include/nvs.h:311:74: note: expected 'const char *' but argument is of type 'esp_err_t' {aka 'int'}
+  311 | esp_err_t nvs_set_str (nvs_handle_t handle, const char* key, const char* value);
+      |                                                              ~~~~~~~~~~~~^~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c: In function 'remove_water_supply':
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:82:10: error: 'savedId' undeclared (first use in this function)
+   82 |     if (!savedId || !serverAddress) return;
+      |          ^~~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:82:10: note: each undeclared identifier is reported only once for each function it appears in
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:82:37: error: 'return' with no value, in function returning non-void [-Werror=return-type]
+   82 |     if (!savedId || !serverAddress) return;
+      |                                     ^~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:78:5: note: declared here
+   78 | int remove_water_supply(char* moduleId, int plantId)
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:112:9: error: 'return' with no value, in function returning non-void [-Werror=return-type]
+  112 |         return;
+      |         ^~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:78:5: note: declared here
+   78 | int remove_water_supply(char* moduleId, int plantId)
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c: In function 'get_water_supply_status':
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:125:10: error: 'savedId' undeclared (first use in this function)
+  125 |     if (!savedId || !serverAddress) return;
+      |          ^~~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:125:37: error: 'return' with no value, in function returning non-void [-Werror=return-type]
+  125 |     if (!savedId || !serverAddress) return;
+      |                                     ^~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:121:5: note: declared here
+  121 | int get_water_supply_status(char* moduleId)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:155:9: error: 'return' with no value, in function returning non-void [-Werror=return-type]
+  155 |         return;
+      |         ^~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:121:5: note: declared here
+  121 | int get_water_supply_status(char* moduleId)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:159:8: error: 'result' undeclared (first use in this function)
+  159 |     if(result != 200) enter_deep_sleep();
+      |        ^~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:158:9: warning: unused variable 'status_code' [-Wunused-variable]
+  158 |     int status_code = esp_http_client_get_status_code(client);
+      |         ^~~~~~~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c: In function 'run_get_water_supply_status':
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:174:9: warning: variable 'removal_result' set but not used [-Wunused-but-set-variable]
+  174 |     int removal_result = 0;
+      |         ^~~~~~~~~~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c: In function 'wifi_event_handler':
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:198:37: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  198 |                         xTaskCreate(run_get_water_supply_status, "run_get_water_supply_status", 8192, NULL, 5, NULL);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                     |
+      |                                     void (*)(void)
+In file included from /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/esp_additions/include/freertos/idf_additions.h:20,
+                 from /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:2:
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:371:44: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(void)'
+  371 |     BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~
+cc1: some warnings being treated as errors
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/services/PlantService/Plant_Service.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/services/PlantService/Plant_Service.c.obj 
+/home/arekstasko/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.3.1-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/build/config -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/bluetoothService -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/NvsService -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/GpioService -I/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/PlantService -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/platform_include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/config/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/config/include/freertos -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/config/xtensa/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/esp_additions/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/include/soc -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/include/soc/esp32 -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/dma/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/ldo/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/. -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/heap/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/log/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/soc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/soc/esp32 -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/soc/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/hal/platform_port/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/hal/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/hal/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_rom/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_rom/include/esp32 -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_rom/esp32 -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_common/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/soc -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/include/private -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/deprecated_include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/include/apps -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/include/apps/sntp -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/lwip/src/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/port/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/port/freertos/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/port/esp32xx/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/port/esp32xx/include/arch -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/lwip/port/esp32xx/include/sys -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/include/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/common/osi/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/common/api/include/api -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/common/btc/profile/esp/blufi/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/common/btc/profile/esp/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/common/hci_log/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/common/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/common/tinycrypt/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/core -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/core/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/core/storage -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/btc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/models/common/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/models/client/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/models/server/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/api/core/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/api/models/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/api -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/lib/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/v1.1/api/core/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/v1.1/api/models/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/esp_ble_mesh/v1.1/btc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/ans/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/bas/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/dis/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/gap/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/gatt/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/hr/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/htp/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/ias/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/ipss/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/lls/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/prox/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/cts/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/tps/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/hid/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/services/sps/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/util/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/store/ram/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/host/store/config/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/porting/nimble/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/port/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/nimble/transport/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/porting/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/nimble/porting/npl/freertos/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/bt/host/nimble/esp-hci/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_timer/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/wifi_apps/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/wifi_apps/nan_app/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/include/local -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_event/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_phy/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_phy/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/nvs_flash/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/spi_flash/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_partition/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/driver/deprecated -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/driver/i2c/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/driver/touch_sensor/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/driver/twai/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/driver/touch_sensor/esp32/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_pm/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_ringbuf/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_gpio/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_pcnt/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_gptimer/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_spi/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_mcpwm/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_ana_cmpr/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_i2s/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_sdmmc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/sdmmc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_sdspi/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_sdio/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_dac/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_rmt/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_tsens/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_sdm/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_i2c/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_uart/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/vfs/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_ledc/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_parlio/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_usb_serial_jtag/include -I/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_http_client/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Os -freorder-blocks -fmacro-prefix-map=/home/arekstasko/sources/repos/PlantCare_Central_Distributer=. -fmacro-prefix-map=/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/services/PlantService/Plant_Service.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/services/PlantService/Plant_Service.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/services/PlantService/Plant_Service.c.obj -c /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/PlantService/Plant_Service.c
+In file included from /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/PlantService/Plant_Service.c:3:
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:38:6: error: #error "include FreeRTOS.h must appear in source files before include timers.h"
+   38 |     #error "include FreeRTOS.h must appear in source files before include timers.h"
+      |      ^~~~~
+In file included from /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:43:
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:38:6: error: #error "include FreeRTOS.h must appear in source files before include task.h"
+   38 |     #error "include FreeRTOS.h must appear in source files before include task.h"
+      |      ^~~~~
+In file included from /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:41:
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:66:6: error: #error "FreeRTOS.h must be included before list.h"
+   66 |     #error "FreeRTOS.h must be included before list.h"
+      |      ^~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:151:25: error: unknown type name 'TickType_t'
+  151 |     configLIST_VOLATILE TickType_t xItemValue;          /*< The value being listed.  In most cases this is used to sort the list in ascending order. */
+      |                         ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:179:14: error: unknown type name 'UBaseType_t'
+  179 |     volatile UBaseType_t uxNumberOfItems;
+      |              ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h: In function 'vListInitialise':
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:437:47: error: expected declaration specifiers before 'PRIVILEGED_FUNCTION'
+  437 | void vListInitialise( List_t * const pxList ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:448:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  448 | void vListInitialiseItem( ListItem_t * const pxItem ) PRIVILEGED_FUNCTION;
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:462:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  462 |                   ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:484:57: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  484 |                      ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:499:1: error: unknown type name 'UBaseType_t'
+  499 | UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:499:63: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  499 | UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) PRIVILEGED_FUNCTION;
+      |                                                               ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:92:1: warning: empty declaration
+   92 | struct tskTaskControlBlock; /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+      | ^~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:93:38: error: storage class specified for parameter 'TaskHandle_t'
+   93 | typedef struct tskTaskControlBlock * TaskHandle_t;
+      |                                      ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:99:21: error: expected declaration specifiers or '...' before '*' token
+   99 | typedef BaseType_t (* TaskHookFunction_t)( void * );
+      |                     ^
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:110:3: error: storage class specified for parameter 'eTaskState'
+  110 | } eTaskState;
+      |   ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:120:3: error: storage class specified for parameter 'eNotifyAction'
+  120 | } eNotifyAction;
+      |   ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:129:5: error: unknown type name 'BaseType_t'
+  129 |     BaseType_t xOverflowCount;
+      |     ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:130:5: error: unknown type name 'TickType_t'
+  130 |     TickType_t xTimeOnEntering;
+      |     ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:131:3: error: storage class specified for parameter 'TimeOut_t'
+  131 | } TimeOut_t;
+      |   ^~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:139:5: error: unknown type name 'uint32_t'
+  139 |     uint32_t ulLengthInBytes;
+      |     ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:140:5: error: unknown type name 'uint32_t'
+  140 |     uint32_t ulParameters;
+      |     ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:141:3: error: storage class specified for parameter 'MemoryRegion_t'
+  141 | } MemoryRegion_t;
+      |   ^~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:148:5: error: unknown type name 'TaskFunction_t'
+  148 |     TaskFunction_t pvTaskCode;
+      |     ^~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:150:5: error: unknown type name 'configSTACK_DEPTH_TYPE'
+  150 |     configSTACK_DEPTH_TYPE usStackDepth;
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:152:5: error: unknown type name 'UBaseType_t'
+  152 |     UBaseType_t uxPriority;
+      |     ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:153:5: error: unknown type name 'StackType_t'
+  153 |     StackType_t * puxStackBuffer;
+      |     ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:154:5: error: expected specifier-qualifier-list before 'MemoryRegion_t'
+  154 |     MemoryRegion_t xRegions[ portNUM_CONFIGURABLE_REGIONS ];
+      |     ^~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:158:3: error: storage class specified for parameter 'TaskParameters_t'
+  158 | } TaskParameters_t;
+      |   ^~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:166:5: error: expected specifier-qualifier-list before 'TaskHandle_t'
+  166 |     TaskHandle_t xHandle;                         /**< The handle of the task to which the rest of the information in the structure relates. */
+      |     ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:182:3: error: storage class specified for parameter 'TaskStatus_t'
+  182 | } TaskStatus_t;
+      |   ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:192:3: error: storage class specified for parameter 'eSleepModeStatus'
+  192 | } eSleepModeStatus;
+      |   ^~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:747:31: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  747 | void vTaskAllocateMPURegions( TaskHandle_t xTask,
+      |                               ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:748:37: error: type defaults to 'int' in declaration of 'MemoryRegion_t' [-Werror=implicit-int]
+  748 |                               const MemoryRegion_t * const pxRegions ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:748:52: error: expected ';', ',' or ')' before '*' token
+  748 |                               const MemoryRegion_t * const pxRegions ) PRIVILEGED_FUNCTION;
+      |                                                    ^
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:786:19: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  786 | void vTaskDelete( TaskHandle_t xTaskToDelete ) PRIVILEGED_FUNCTION;
+      |                   ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:835:24: error: unknown type name 'TickType_t'
+  835 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:835:51: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  835 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:897:1: error: unknown type name 'BaseType_t'
+  897 | BaseType_t xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:897:29: error: unknown type name 'TickType_t'
+  897 | BaseType_t xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+      |                             ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:898:35: error: unknown type name 'TickType_t'
+  898 |                             const TickType_t xTimeIncrement ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:939:1: error: unknown type name 'BaseType_t'
+  939 | BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:939:29: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  939 | BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                             ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:983:1: error: unknown type name 'UBaseType_t'
+  983 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:983:38: error: type defaults to 'int' in declaration of 'TaskHandle_t' [-Werror=implicit-int]
+  983 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                      ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:983:51: error: expected ';', ',' or ')' before 'xTask'
+  983 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                   ^~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:989:1: error: unknown type name 'UBaseType_t'
+  989 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:989:45: error: type defaults to 'int' in declaration of 'TaskHandle_t' [-Werror=implicit-int]
+  989 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:989:58: error: expected ';', ',' or ')' before 'xTask'
+  989 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                          ^~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1005:1: error: expected declaration specifiers before 'eTaskState'
+ 1005 | eTaskState eTaskGetState( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1058:20: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1058 | void vTaskGetInfo( TaskHandle_t xTask,
+      |                    ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1059:20: error: expected declaration specifiers or '...' before 'TaskStatus_t'
+ 1059 |                    TaskStatus_t * pxTaskStatus,
+      |                    ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1060:20: error: unknown type name 'BaseType_t'
+ 1060 |                    BaseType_t xGetFreeStackSpace,
+      |                    ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1061:20: error: expected declaration specifiers or '...' before 'eTaskState'
+ 1061 |                    eTaskState eState ) PRIVILEGED_FUNCTION;
+      |                    ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1100:24: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1100 | void vTaskPrioritySet( TaskHandle_t xTask,
+      |                        ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1101:24: error: unknown type name 'UBaseType_t'
+ 1101 |                        UBaseType_t uxNewPriority ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1149:20: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1149 | void vTaskSuspend( TaskHandle_t xTaskToSuspend ) PRIVILEGED_FUNCTION;
+      |                    ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1195:19: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1195 | void vTaskResume( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      |                   ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1221:1: error: unknown type name 'BaseType_t'
+ 1221 | BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1221:32: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1221 | BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1253:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1253 | void vTaskStartScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1306:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1306 | void vTaskEndScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1356:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1356 | void vTaskSuspendAll( void ) PRIVILEGED_FUNCTION;
+      |                              ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1407:1: error: unknown type name 'BaseType_t'
+ 1407 | BaseType_t xTaskResumeAll( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1407:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1407 | BaseType_t xTaskResumeAll( void ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1419:1: error: unknown type name 'TickType_t'
+ 1419 | TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1419:38: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1419 | TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1432:1: error: unknown type name 'TickType_t'
+ 1432 | TickType_t xTaskGetTickCountFromISR( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1432:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1432 | TickType_t xTaskGetTickCountFromISR( void ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1443:1: error: unknown type name 'UBaseType_t'
+ 1443 | UBaseType_t uxTaskGetNumberOfTasks( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1443:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1443 | UBaseType_t uxTaskGetNumberOfTasks( void ) PRIVILEGED_FUNCTION;
+      |                                            ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1453:23: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1453 | char * pcTaskGetName( TaskHandle_t xTaskToQuery ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                       ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1466:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 1466 | TaskHandle_t xTaskGetHandle( const char * pcNameToQuery ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      | ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1514:1: error: unknown type name 'UBaseType_t'
+ 1514 | UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1514:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1514 | UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                          ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1539:1: error: unknown type name 'configSTACK_DEPTH_TYPE'
+ 1539 | configSTACK_DEPTH_TYPE uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1539:54: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1539 | configSTACK_DEPTH_TYPE uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1642:1: error: unknown type name 'BaseType_t'
+ 1642 | BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1642:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1642 | BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+      |                                          ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1652:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 1652 | TaskHandle_t xTaskGetIdleTaskHandle( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1751:1: error: unknown type name 'UBaseType_t'
+ 1751 | UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+      | ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1751:35: error: expected declaration specifiers or '...' before 'TaskStatus_t'
+ 1751 | UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+      |                                   ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1752:41: error: unknown type name 'UBaseType_t'
+ 1752 |                                   const UBaseType_t uxArraySize,
+      |                                         ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1753:35: error: unknown type name 'configRUN_TIME_COUNTER_TYPE'
+ 1753 |                                   configRUN_TIME_COUNTER_TYPE * const pulTotalRunTime ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1799:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1799 | void vTaskList( char * pcWriteBuffer ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                        ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1850:51: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1850 | void vTaskGetRunTimeStats( char * pcWriteBuffer ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1887:1: error: unknown type name 'configRUN_TIME_COUNTER_TYPE'
+ 1887 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimeCounter( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1887:65: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1887 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimeCounter( void ) PRIVILEGED_FUNCTION;
+      |                                                                 ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1888:1: error: unknown type name 'configRUN_TIME_COUNTER_TYPE'
+ 1888 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimePercent( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1888:65: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1888 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimePercent( void ) PRIVILEGED_FUNCTION;
+      |                                                                 ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1993:1: error: unknown type name 'BaseType_t'
+ 1993 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1993:32: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1993 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      |                                ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1994:32: error: unknown type name 'UBaseType_t'
+ 1994 |                                UBaseType_t uxIndexToNotify,
+      |                                ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1995:32: error: unknown type name 'uint32_t'
+ 1995 |                                uint32_t ulValue,
+      |                                ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:42:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+   41 | #include "list.h"
+  +++ |+#include <stdint.h>
+   42 | 
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1996:32: error: expected declaration specifiers or '...' before 'eNotifyAction'
+ 1996 |                                eNotifyAction eAction,
+      |                                ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1997:32: error: unknown type name 'uint32_t'
+ 1997 |                                uint32_t * pulPreviousNotificationValue ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1997:32: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2137:1: error: unknown type name 'BaseType_t'
+ 2137 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2137:39: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2137 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      |                                       ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2138:39: error: unknown type name 'UBaseType_t'
+ 2138 |                                       UBaseType_t uxIndexToNotify,
+      |                                       ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2139:39: error: unknown type name 'uint32_t'
+ 2139 |                                       uint32_t ulValue,
+      |                                       ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2139:39: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2140:39: error: expected declaration specifiers or '...' before 'eNotifyAction'
+ 2140 |                                       eNotifyAction eAction,
+      |                                       ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2141:39: error: unknown type name 'uint32_t'
+ 2141 |                                       uint32_t * pulPreviousNotificationValue,
+      |                                       ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2141:39: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2142:39: error: unknown type name 'BaseType_t'
+ 2142 |                                       BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                       ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2272:1: error: unknown type name 'BaseType_t'
+ 2272 | BaseType_t xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2272:36: error: unknown type name 'UBaseType_t'
+ 2272 | BaseType_t xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+      |                                    ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2273:36: error: unknown type name 'uint32_t'
+ 2273 |                                    uint32_t ulBitsToClearOnEntry,
+      |                                    ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2273:36: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2274:36: error: unknown type name 'uint32_t'
+ 2274 |                                    uint32_t ulBitsToClearOnExit,
+      |                                    ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2274:36: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2275:36: error: unknown type name 'uint32_t'
+ 2275 |                                    uint32_t * pulNotificationValue,
+      |                                    ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2275:36: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2276:36: error: unknown type name 'TickType_t'
+ 2276 |                                    TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                    ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2428:37: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2428 | void vTaskGenericNotifyGiveFromISR( TaskHandle_t xTaskToNotify,
+      |                                     ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2429:37: error: unknown type name 'UBaseType_t'
+ 2429 |                                     UBaseType_t uxIndexToNotify,
+      |                                     ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2430:37: error: unknown type name 'BaseType_t'
+ 2430 |                                     BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2528:1: error: unknown type name 'uint32_t'
+ 2528 | uint32_t ulTaskGenericNotifyTake( UBaseType_t uxIndexToWaitOn,
+      | ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2528:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2528:35: error: unknown type name 'UBaseType_t'
+ 2528 | uint32_t ulTaskGenericNotifyTake( UBaseType_t uxIndexToWaitOn,
+      |                                   ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2529:35: error: unknown type name 'BaseType_t'
+ 2529 |                                   BaseType_t xClearCountOnExit,
+      |                                   ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2530:35: error: unknown type name 'TickType_t'
+ 2530 |                                   TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2587:1: error: unknown type name 'BaseType_t'
+ 2587 | BaseType_t xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2587:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2587 | BaseType_t xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+      |                                          ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2588:42: error: unknown type name 'UBaseType_t'
+ 2588 |                                          UBaseType_t uxIndexToClear ) PRIVILEGED_FUNCTION;
+      |                                          ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2645:1: error: unknown type name 'uint32_t'
+ 2645 | uint32_t ulTaskGenericNotifyValueClear( TaskHandle_t xTask,
+      | ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2645:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2645:41: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2645 | uint32_t ulTaskGenericNotifyValueClear( TaskHandle_t xTask,
+      |                                         ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2646:41: error: unknown type name 'UBaseType_t'
+ 2646 |                                         UBaseType_t uxIndexToClear,
+      |                                         ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2647:41: error: unknown type name 'uint32_t'
+ 2647 |                                         uint32_t ulBitsToClear ) PRIVILEGED_FUNCTION;
+      |                                         ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2647:41: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2662:28: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 2662 | void vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                            ^~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2742:1: error: unknown type name 'BaseType_t'
+ 2742 | BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2742:34: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 2742 | BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+      |                                  ^~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2743:34: error: unknown type name 'TickType_t'
+ 2743 |                                  TickType_t * const pxTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2766:1: error: unknown type name 'BaseType_t'
+ 2766 | BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2766:31: error: unknown type name 'TickType_t'
+ 2766 | BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) PRIVILEGED_FUNCTION;
+      |                               ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2793:1: error: unknown type name 'BaseType_t'
+ 2793 | BaseType_t xTaskIncrementTick( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2793:39: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2793 | BaseType_t xTaskIncrementTick( void ) PRIVILEGED_FUNCTION;
+      |                                       ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2827:35: error: unknown type name 'TickType_t'
+ 2827 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2827:61: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2827 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                             ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2829:44: error: unknown type name 'TickType_t'
+ 2829 |                                      const TickType_t xItemValue,
+      |                                            ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2830:44: error: unknown type name 'TickType_t'
+ 2830 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                            ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2830:70: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2830 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                                      ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2844:39: error: unknown type name 'TickType_t'
+ 2844 |                                       TickType_t xTicksToWait,
+      |                                       ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2845:45: error: unknown type name 'BaseType_t'
+ 2845 |                                       const BaseType_t xWaitIndefinitely ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2871:1: error: unknown type name 'BaseType_t'
+ 2871 | BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2871:73: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2871 | BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) PRIVILEGED_FUNCTION;
+      |                                                                         ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2873:47: error: unknown type name 'TickType_t'
+ 2873 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2873:71: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2873 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2883:1: error: expected declaration specifiers before 'portDONT_DISCARD'
+ 2883 | portDONT_DISCARD void vTaskSwitchContext( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2889:1: error: unknown type name 'TickType_t'
+ 2889 | TickType_t uxTaskResetEventItemValue( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2889:46: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2889 | TickType_t uxTaskResetEventItemValue( void ) PRIVILEGED_FUNCTION;
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2894:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 2894 | TaskHandle_t xTaskGetCurrentTaskHandle( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2900:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2900 | void vTaskMissedYield( void ) PRIVILEGED_FUNCTION;
+      |                               ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2906:1: error: unknown type name 'BaseType_t'
+ 2906 | BaseType_t xTaskGetSchedulerState( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2906:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2906 | BaseType_t xTaskGetSchedulerState( void ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2912:1: error: unknown type name 'BaseType_t'
+ 2912 | BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2912:34: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2912 | BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2918:1: error: unknown type name 'BaseType_t'
+ 2918 | BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2918:37: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2918 | BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2928:43: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2928 | void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder,
+      |                                           ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2929:43: error: unknown type name 'UBaseType_t'
+ 2929 |                                           UBaseType_t uxHighestPriorityWaitingTask ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2934:1: error: unknown type name 'UBaseType_t'
+ 2934 | UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2934:34: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2934 | UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2940:26: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2940 | void vTaskSetTaskNumber( TaskHandle_t xTask,
+      |                          ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2941:32: error: unknown type name 'UBaseType_t'
+ 2941 |                          const UBaseType_t uxHandle ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2951:21: error: unknown type name 'TickType_t'
+ 2951 | void vTaskStepTick( TickType_t xTicksToJump ) PRIVILEGED_FUNCTION;
+      |                     ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2967:1: error: expected declaration specifiers before 'eSleepModeStatus'
+ 2967 | eSleepModeStatus eTaskConfirmSleepModeStatus( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2973:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 2973 | TaskHandle_t pvTaskIncrementMutexHeldCount( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2979:36: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 2979 | void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                                    ^~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:86:1: warning: empty declaration
+   86 | struct tmrTimerControl; /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+      | ^~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:87:34: error: storage class specified for parameter 'TimerHandle_t'
+   87 | typedef struct tmrTimerControl * TimerHandle_t;
+      |                                  ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:92:43: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+   92 | typedef void (* TimerCallbackFunction_t)( TimerHandle_t xTimer );
+      |                                           ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:99:36: error: unknown type name 'uint32_t'
+   99 |                                    uint32_t );
+      |                                    ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+   43 | #include "task.h"
+  +++ |+#include <stdint.h>
+   44 | /*lint -restore */
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:385:33: error: type defaults to 'int' in declaration of 'TimerHandle_t' [-Werror=implicit-int]
+  385 | void * pvTimerGetTimerID( const TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:385:47: error: expected ';', ',' or ')' before 'xTimer'
+  385 | void * pvTimerGetTimerID( const TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:405:24: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+  405 | void vTimerSetTimerID( TimerHandle_t xTimer,
+      |                        ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:442:1: error: unknown type name 'BaseType_t'
+  442 | BaseType_t xTimerIsTimerActive( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:442:33: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+  442 | BaseType_t xTimerIsTimerActive( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:449:1: error: expected declaration specifiers before 'TaskHandle_t'
+  449 | TaskHandle_t xTimerGetTimerDaemonTaskHandle( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1173:1: error: unknown type name 'BaseType_t'
+ 1173 | BaseType_t xTimerPendFunctionCallFromISR( PendedFunction_t xFunctionToPend,
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1173:43: error: unknown type name 'PendedFunction_t'
+ 1173 | BaseType_t xTimerPendFunctionCallFromISR( PendedFunction_t xFunctionToPend,
+      |                                           ^~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1175:43: error: unknown type name 'uint32_t'
+ 1175 |                                           uint32_t ulParameter2,
+      |                                           ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1175:43: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1176:43: error: unknown type name 'BaseType_t'
+ 1176 |                                           BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1206:1: error: unknown type name 'BaseType_t'
+ 1206 | BaseType_t xTimerPendFunctionCall( PendedFunction_t xFunctionToPend,
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1206:36: error: unknown type name 'PendedFunction_t'
+ 1206 | BaseType_t xTimerPendFunctionCall( PendedFunction_t xFunctionToPend,
+      |                                    ^~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1208:36: error: unknown type name 'uint32_t'
+ 1208 |                                    uint32_t ulParameter2,
+      |                                    ^~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1208:36: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1209:36: error: unknown type name 'TickType_t'
+ 1209 |                                    TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                    ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1219:30: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1219 | const char * pcTimerGetName( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                              ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1235:27: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1235 | void vTimerSetReloadMode( TimerHandle_t xTimer,
+      |                           ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1236:33: error: unknown type name 'BaseType_t'
+ 1236 |                           const BaseType_t xAutoReload ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1249:1: error: unknown type name 'BaseType_t'
+ 1249 | BaseType_t xTimerGetReloadMode( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1249:33: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1249 | BaseType_t xTimerGetReloadMode( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1262:1: error: unknown type name 'UBaseType_t'
+ 1262 | UBaseType_t uxTimerGetReloadMode( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1262:35: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1262 | UBaseType_t uxTimerGetReloadMode( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1272:1: error: unknown type name 'TickType_t'
+ 1272 | TickType_t xTimerGetPeriod( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1272:29: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1272 | TickType_t xTimerGetPeriod( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                             ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1286:1: error: unknown type name 'TickType_t'
+ 1286 | TickType_t xTimerGetExpiryTime( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1286:33: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1286 | TickType_t xTimerGetExpiryTime( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1312:1: error: unknown type name 'BaseType_t'
+ 1312 | BaseType_t xTimerCreateTimerTask( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1312:42: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1312 | BaseType_t xTimerCreateTimerTask( void ) PRIVILEGED_FUNCTION;
+      |                                          ^~~~~~~~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1313:1: error: unknown type name 'BaseType_t'
+ 1313 | BaseType_t xTimerGenericCommand( TimerHandle_t xTimer,
+      | ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1313:34: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1313 | BaseType_t xTimerGenericCommand( TimerHandle_t xTimer,
+      |                                  ^~~~~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1314:40: error: unknown type name 'BaseType_t'
+ 1314 |                                  const BaseType_t xCommandID,
+      |                                        ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1315:40: error: unknown type name 'TickType_t'
+ 1315 |                                  const TickType_t xOptionalValue,
+      |                                        ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1316:34: error: unknown type name 'BaseType_t'
+ 1316 |                                  BaseType_t * const pxHigherPriorityTaskWoken,
+      |                                  ^~~~~~~~~~
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1317:40: error: unknown type name 'TickType_t'
+ 1317 |                                  const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                        ^~~~~~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/PlantService/Plant_Service.c:7:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+    7 | {
+      | ^
+/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:437:6: error: old-style parameter declarations in prototyped function definition
+  437 | void vListInitialise( List_t * const pxList ) PRIVILEGED_FUNCTION;
+      |      ^~~~~~~~~~~~~~~
+/home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/PlantService/Plant_Service.c:16: error: expected '{' at end of input
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.
