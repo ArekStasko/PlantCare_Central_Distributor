@@ -5,6 +5,73 @@
 #include "esp_log.h"
 #include "esp_event.h"
 
+void saveStatusId(char* status_id)
+{
+    nvs_handle_t nvs_handle;
+    esp_err_t err = nvs_open("storage", NVS_READWRITE, &nvs_handle);
+    if (err == ESP_OK)
+    {
+    	nvs_set_str(nvs_handle, "statusId", status_id);
+    }
+}
+
+void savePlantId(char* plant_id)
+{
+    nvs_handle_t nvs_handle;
+    esp_err_t err = nvs_open("storage", NVS_READWRITE, &nvs_handle);
+    if (err == ESP_OK)
+    {
+    	nvs_set_str(nvs_handle, "plantId", plant_id);
+    }
+}
+
+char* getStatusId()
+{
+    static char status_id[128];
+    size_t required_size = 0;
+
+    nvs_handle_t nvs_handle;
+    esp_err_t ret = nvs_open("storage", NVS_READONLY, &nvs_handle);
+
+    if (ret != ESP_OK) {
+        ESP_LOGE("NVS", "Failed to open NVS handle! Error: %d", ret);
+        return NULL;
+    }
+    ret = nvs_get_str(nvs_handle, "statusId", status_id, &required_size);
+    if (ret != ESP_OK) {
+        ESP_LOGE("NVS", "Failed to read status id");
+        nvs_close(nvs_handle);
+        return "-1";
+    }
+
+    nvs_close(nvs_handle);
+    return status_id;
+}
+
+char* getPlantId()
+{
+    static char plant_id[128];
+    size_t required_size = 0;
+
+    nvs_handle_t nvs_handle;
+    esp_err_t ret = nvs_open("storage", NVS_READONLY, &nvs_handle);
+
+    if (ret != ESP_OK) {
+        ESP_LOGE("NVS", "Failed to open NVS handle! Error: %d", ret);
+        return NULL;
+    }
+
+    ret = nvs_get_str(nvs_handle, "plantId", plant_id, &required_size);
+    if (ret != ESP_OK) {
+        ESP_LOGE("NVS", "Failed to read plant id");
+        nvs_close(nvs_handle);
+        return "-1";
+    }
+
+    nvs_close(nvs_handle);
+    return plant_id;
+}
+
 char* getWifiName(void)
 {
   	static char wifiName[128];

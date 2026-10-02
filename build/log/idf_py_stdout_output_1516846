@@ -1,0 +1,196 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 11 2026 19:45:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=252a8h (152232) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=000352d0 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (157) esp_image: segment 2: paddr=000352dc vaddr=3ffbdb60 size=05be8h ( 23528) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=0003aecc vaddr=40080000 size=0514ch ( 20812) load[0m
+[0;32mI (180) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=98520h (623904) map[0m
+[0;32mI (394) esp_image: segment 5: paddr=000d8548 vaddr=4008514c size=17a9ch ( 96924) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+D (459) cpu_start: Pro cpu up[0m
+D (459) cpu_start: Starting app cpu, entry point is 0x40081114[0m
+D (0) cpu_start: App cpu up[0m
+D (470) clk: RTC_SLOW_CLK calibration value: 3206694[0m
+D (482) cpu_start: calling init function: 0x400d1d94 on core: 0[0m
+D (482) cpu_start: calling init function: 0x400d222c on core: 0[0m
+[0;32mI (484) cpu_start: Pro cpu start user code[0m
+[0;32mI (489) cpu_start: cpu freq: 160000000 Hz[0m
+D (494) cpu_start: calling init function: 0x400d1cc4 on core: 0[0m
+[0;32mI (500) app_init: Application information:[0m
+[0;32mI (505) app_init: Project name:     PlantCare_Central_Distributor[0m
+[0;32mI (511) app_init: App version:      f3ca935-dirty[0m
+[0;32mI (517) app_init: Compile time:     Jun 15 2026 21:18:01[0m
+[0;32mI (523) app_init: ELF file SHA256:  2bdc4a85c...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.3.1-dirty[0m
+D (533) cpu_start: calling init function: 0x400d1da8 on core: 0[0m
+[0;32mI (539) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (544) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (549) efuse_init: Chip rev:         v3.1[0m
+D (554) cpu_start: calling init function: 0x400d3784 on core: 0[0m
+D (560) memory_layout: Checking 13 reserved memory ranges:[0m
+D (565) memory_layout: Reserved memory range 0x3ff82000 - 0x3ff82000[0m
+D (572) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0[0m
+D (578) memory_layout: Reserved memory range 0x3ffae6e0 - 0x3ffaff10[0m
+D (585) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb6388[0m
+D (591) memory_layout: Reserved memory range 0x3ffb8000 - 0x3ffb9a20[0m
+D (597) memory_layout: Reserved memory range 0x3ffbdb28 - 0x3ffbdb5c[0m
+D (604) memory_layout: Reserved memory range 0x3ffbdb60 - 0x3ffc9be0[0m
+D (610) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440[0m
+D (617) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350[0m
+D (623) memory_layout: Reserved memory range 0x40070000 - 0x40078000[0m
+D (630) memory_layout: Reserved memory range 0x40078000 - 0x40080000[0m
+D (636) memory_layout: Reserved memory range 0x40080000 - 0x4009cbe8[0m
+D (642) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (649) memory_layout: Building list of available memory regions:[0m
+D (655) memory_layout: Available memory region 0x3ffaff10 - 0x3ffb0000[0m
+D (662) memory_layout: Available memory region 0x3ffb6388 - 0x3ffb8000[0m
+D (668) memory_layout: Available memory region 0x3ffb9a20 - 0x3ffbdb28[0m
+D (675) memory_layout: Available memory region 0x3ffc9be0 - 0x3ffca000[0m
+D (681) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000[0m
+D (688) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000[0m
+D (695) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000[0m
+D (701) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000[0m
+D (708) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000[0m
+D (714) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000[0m
+D (721) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000[0m
+D (728) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000[0m
+D (734) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000[0m
+D (741) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000[0m
+D (747) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000[0m
+D (754) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20[0m
+D (761) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000[0m
+D (767) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000[0m
+D (774) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000[0m
+D (780) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000[0m
+D (787) memory_layout: Available memory region 0x3fffc000 - 0x40000000[0m
+D (794) memory_layout: Available memory region 0x4009cbe8 - 0x4009e000[0m
+D (800) memory_layout: Available memory region 0x4009e000 - 0x400a0000[0m
+[0;32mI (807) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (814) heap_init: New heap initialised at 0x3ffaff10[0m
+[0;32mI (819) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+D (825) heap_init: New heap initialised at 0x3ffb6388[0m
+[0;32mI (830) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+D (836) heap_init: New heap initialised at 0x3ffb9a20[0m
+[0;32mI (841) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+D (848) heap_init: New heap initialised at 0x3ffc9be0[0m
+[0;32mI (853) heap_init: At 3FFC9BE0 len 00016420 (89 KiB): DRAM[0m
+[0;32mI (859) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (865) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+D (872) heap_init: New heap initialised at 0x4009cbe8[0m
+[0;32mI (877) heap_init: At 4009CBE8 len 00003418 (13 KiB): IRAM[0m
+D (883) cpu_start: calling init function: 0x400d4964 on core: 0[0m
+D (889) cpu_start: calling init function: 0x400d43ec on core: 0[0m
+D (895) cpu_start: calling init function: 0x400d226c on core: 0[0m
+D (901) intr_alloc: Connected src 46 to int 1 (cpu 0)[0m
+D (906) cpu_start: calling init function: 0x400d2278 on core: 0[0m
+D (912) cpu_start: calling init function: 0x400d5820 on core: 0[0m
+D (918) cpu_start: calling init function: 0x400d6178 on core: 0[0m
+D (924) cpu_start: calling init function: 0x400d4464 on core: 0[0m
+D (930) cpu_start: calling init function: 0x400d47a4 on core: 0[0m
+D (936) cpu_start: calling init function: 0x400d22b8 on core: 0[0m
+D (942) spi_flash: trying chip: issi[0m
+D (946) spi_flash: trying chip: gd[0m
+D (949) spi_flash: trying chip: mxic[0m
+D (953) spi_flash: trying chip: winbond[0m
+D (957) spi_flash: trying chip: generic[0m
+[0;32mI (961) spi_flash: detected chip: generic[0m
+[0;32mI (965) spi_flash: flash io: dio[0m
+D (969) cpu_start: calling init function: 0x4016026c on core: 0[0m
+D (975) cpu_start: calling init function: 0x4013d2ec[0m
+D (980) cpu_start: calling init function: 0x400ed514[0m
+D (985) cpu_start: calling init function: 0x4008f2d4[0m
+D (990) cpu_start: calling init function: 0x400d30d0[0m
+D (995) cpu_start: calling init function: 0x400d2638[0m
+D (1000) cpu_start: calling init function: 0x400e74d0 on core: 0[0m
+D (1007) intr_alloc: Connected src 17 to int 2 (cpu 0)[0m
+D (1012) cpu_start: calling init function: 0x400d2284 on core: 0[0m
+[0;32mI (1018) coexist: coex firmware version: 4482466[0m
+D (1023) cpu_start: calling init function: 0x400d2298 on core: 0[0m
+D (1029) intr_alloc: Connected src 24 to int 3 (cpu 0)[0m
+D (1034) app_start: Starting scheduler on CPU0[0m
+[0;32D (1039) intr_alloc: Connected src 25 to int 1 (cpu 1)[0m
+D (1039) app_start: Starting scheduler on CPU1[0m
+mI (1039) main_task: Started on CPU0[0m
+D (1059) heap_init: New heap initialised at 0x3ffe0440[0m
+D (1059) heap_init: New heap initialised at 0x3ffe4350[0m
+D (1059) intr_alloc: Connected src 16 to int 5 (cpu 0)[0m
+[0;32mI (1059) main_task: Calling app_main()[0m
+D (1089) adc_oneshot: new adc unit0 is created[0m
+ADC init ret: ESP_OK, handle: 0x3ffbcef8
+D (1089) nvs: nvs_open_from_partition storage 0[0m
+D (1089) nvs: nvs_get_str_or_blob name[0m
+D (1099) nvs: nvs_get_str_or_blob password[0m
+D (1099) nvs: nvs_get_str_or_blob id[0m
+D (1099) nvs: nvs_close 1[0m
+D (1109) BTDM_INIT: Release DRAM [0x3ffb2730] - [0x3ffb6388][0m
+D (1109) intr_alloc: Connected src -5 to int 29 (cpu 0)[0m
+[0;32mI (1119) BTDM_INIT: BT controller compile version [b022216][0m
+D (1119) BTDM_INIT: .data initialise [0x3ffae6e0] <== [0x4000d890][0m
+D (1129) BTDM_INIT: .bss initialise [0x3ffb0000] - [0x3ffb09a8][0m
+D (1139) BTDM_INIT: .bss initialise [0x3ffb09a8] - [0x3ffb1ddc][0m
+D (1139) BTDM_INIT: .bss initialise [0x3ffb1ddc] - [0x3ffb2730][0m
+D (1149) BTDM_INIT: .bss initialise [0x3ffb8000] - [0x3ffb9a20][0m
+D (1149) BTDM_INIT: .bss initialise [0x3ffbdb28] - [0x3ffbdb5c][0m
+D (1159) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (1169) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (1169) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (1179) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (1189) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (1189) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (1199) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+[0;32mI (1209) BTDM_INIT: Bluetooth MAC: ec:e3:34:19:fc:3a[0m
+[0;32mI (1219) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+D (1219) phy_init: loading PHY init data from application binary[0m
+D (1229) nvs: nvs_open_from_partition phy 0[0m
+D (1229) nvs: nvs_get cal_version 4[0m
+D (1239) nvs: nvs_get_str_or_blob cal_mac[0m
+D (1239) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (1249) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (1249) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (1259) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (1269) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (1269) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (1279) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+D (1289) nvs: nvs_get_str_or_blob cal_data[0m
+D (1299) nvs: nvs_close 2[0m
+D (1299) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (1299) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (1309) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (1319) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (1319) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (1329) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (1339) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+[0;32mI (1649) main_task: Returned from app_main()[0m
+[0;32mI (1689) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (1699) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1699) NimBLE: disc_mode=2[0m
+[0;32mI (1699) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1709) NimBLE: 
+[0m

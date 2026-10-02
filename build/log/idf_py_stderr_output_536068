@@ -1,0 +1,361 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081114: call_start_cpu1 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/cpu_start.c:190
+[0m
+[0;33m--- 0x400d1d94: __esp_system_init_fn_init_efuse_check at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:31
+[0m
+[0;33m--- 0x400d222c: __esp_system_init_fn_init_show_cpu_freq at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:58
+[0m
+[0;33m--- 0x400d1cc4: __esp_system_init_fn_init_show_app_info at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_app_format/esp_app_desc.c:104
+[0m
+[0;33m--- 0x400d1da8: __esp_system_init_fn_init_efuse_show_app_info at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:41
+[0m
+[0;33m--- 0x400d3784: __esp_system_init_fn_init_heap at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/heap/heap_caps_init.c:25
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m--- 0x400d4964: __esp_system_init_fn_esp_timer_init_nonos at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_timer/src/esp_timer_init.c:27
+[0m
+[0;33m--- 0x400d43ec: __esp_system_init_fn_init_newlib at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/newlib_init.c:162
+[0m
+[0;33m--- 0x400d226c: __esp_system_init_fn_init_brownout at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:67
+[0m
+[0;33m--- 0x400d2278: __esp_system_init_fn_init_newlib_time at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:81
+[0m
+[0;33m--- 0x400d5820: __esp_system_init_fn_init_vfs_uart at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c:1080
+[0m
+[0;33m--- 0x400d6178: __esp_system_init_fn_init_vfs_console at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_vfs_console/vfs_console.c:222
+[0m
+[0;33m--- 0x400d4464: __esp_system_init_fn_init_newlib_stdio at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/newlib_init.c:207
+[0m
+[0;33m--- 0x400d47a4: __esp_system_init_fn_init_pthread at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/pthread/pthread.c:76
+[0m
+[0;33m--- 0x400d22b8: __esp_system_init_fn_init_flash at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:88
+[0m
+[0;33m--- 0x4016026c: __esp_system_init_fn_init_efuse at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:137
+[0m
+[0;33m--- 0x4013d2ec: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m--- 0x400ed514: s_set_default_wifi_log_level at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_init.c:89
+[0m
+[0;33m--- 0x4008f2d4: enable_timer_group0_for_calibration at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/rtc_time.c:197
+[0m
+[0;33m--- 0x400d30d0: esp_ipc_init at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/esp_ipc.c:113
+[0m
+[0;33m--- 0x400d2638: esp_reset_reason_init at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/soc/esp32/reset_reason.c:60
+[0m
+[0;33m--- 0x400e74d0: __esp_system_init_fn_esp_timer_init_os at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_timer/src/esp_timer.c:587
+[0m
+[0;33m--- 0x400d2284: __esp_system_init_fn_init_coexist at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:134
+[0m
+[0;33m--- 0x400d2298: __esp_system_init_fn_init_disable_rtc_wdt at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:143
+[0m
+[0;33m--- 0x400eb458: esp_netif_new_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed7c8: wifi_default_action_sta_start at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:72
+[0m
+[0;33m--- 0x400eac24: esp_netif_set_mac_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m--- 0x40115658: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m--- 0x400eb6ac: esp_netif_start_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m--- 0x400ebb68: esp_netif_update_default_netif_lwip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:317
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed7f8: wifi_default_action_sta_connected at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:86
+[0m
+[0;33m--- 0x400eaecc: esp_netif_up_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1647
+[0m
+[0;33m--- 0x400ebb68: esp_netif_update_default_netif_lwip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:317
+[0m
+[0;33m--- 0x400eb2ac: esp_netif_dhcpc_start_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1439
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed854: wifi_default_action_sta_got_ip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:128
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x401603f4: nvs_sec_provider_include_impl at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/nvs_sec_provider/nvs_sec_provider.c:285
+[0m
+[0;33m--- 0x401603fb: server_call at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:45
+[0m
+[0;33m--- 0x401603f8: server_call at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:43
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081114: call_start_cpu1 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/cpu_start.c:190
+[0m
+[0;33m--- 0x400d1d94: __esp_system_init_fn_init_efuse_check at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:31
+[0m
+[0;33m--- 0x400d222c: __esp_system_init_fn_init_show_cpu_freq at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:58
+[0m
+[0;33m--- 0x400d1cc4: __esp_system_init_fn_init_show_app_info at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_app_format/esp_app_desc.c:104
+[0m
+[0;33m--- 0x400d1da8: __esp_system_init_fn_init_efuse_show_app_info at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:41
+[0m
+[0;33m--- 0x400d3784: __esp_system_init_fn_init_heap at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/heap/heap_caps_init.c:25
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m--- 0x400d4964: __esp_system_init_fn_esp_timer_init_nonos at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_timer/src/esp_timer_init.c:27
+[0m
+[0;33m--- 0x400d43ec: __esp_system_init_fn_init_newlib at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/newlib_init.c:162
+[0m
+[0;33m--- 0x400d226c: __esp_system_init_fn_init_brownout at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:67
+[0m
+[0;33m--- 0x400d2278: __esp_system_init_fn_init_newlib_time at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:81
+[0m
+[0;33m--- 0x400d5820: __esp_system_init_fn_init_vfs_uart at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c:1080
+[0m
+[0;33m--- 0x400d6178: __esp_system_init_fn_init_vfs_console at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_vfs_console/vfs_console.c:222
+[0m
+[0;33m--- 0x400d4464: __esp_system_init_fn_init_newlib_stdio at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/newlib_init.c:207
+[0m
+[0;33m--- 0x400d47a4: __esp_system_init_fn_init_pthread at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/pthread/pthread.c:76
+[0m
+[0;33m--- 0x400d22b8: __esp_system_init_fn_init_flash at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:88
+[0m
+[0;33m--- 0x4016026c: __esp_system_init_fn_init_efuse at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:137
+[0m
+[0;33m--- 0x4013d2ec: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m--- 0x400ed514: s_set_default_wifi_log_level at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_init.c:89
+[0m
+[0;33m--- 0x4008f2d4: enable_timer_group0_for_calibration at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/rtc_time.c:197
+[0m
+[0;33m--- 0x400d30d0: esp_ipc_init at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/esp_ipc.c:113
+[0m
+[0;33m--- 0x400d2638: esp_reset_reason_init at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/soc/esp32/reset_reason.c:60
+[0m
+[0;33m--- 0x400e74d0: __esp_system_init_fn_esp_timer_init_os at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_timer/src/esp_timer.c:587
+[0m
+[0;33m--- 0x400d2284: __esp_system_init_fn_init_coexist at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:134
+[0m
+[0;33m--- 0x400d2298: __esp_system_init_fn_init_disable_rtc_wdt at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:143
+[0m
+[0;33m--- 0x400eb458: esp_netif_new_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed7c8: wifi_default_action_sta_start at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:72
+[0m
+[0;33m--- 0x400eac24: esp_netif_set_mac_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m--- 0x40115658: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m--- 0x400eb6ac: esp_netif_start_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m--- 0x400ebb68: esp_netif_update_default_netif_lwip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:317
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed7f8: wifi_default_action_sta_connected at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:86
+[0m
+[0;33m--- 0x400eaecc: esp_netif_up_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1647
+[0m
+[0;33m--- 0x400ebb68: esp_netif_update_default_netif_lwip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:317
+[0m
+[0;33m--- 0x400eb2ac: esp_netif_dhcpc_start_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1439
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed854: wifi_default_action_sta_got_ip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:128
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x401603f4: nvs_sec_provider_include_impl at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/nvs_sec_provider/nvs_sec_provider.c:285
+[0m
+[0;33m--- 0x401603fb: server_call at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:45
+[0m
+[0;33m--- 0x401603f8: server_call at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:43
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081114: call_start_cpu1 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/cpu_start.c:190
+[0m
+[0;33m--- 0x400d1d94: __esp_system_init_fn_init_efuse_check at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:31
+[0m
+[0;33m--- 0x400d222c: __esp_system_init_fn_init_show_cpu_freq at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:58
+[0m
+[0;33m--- 0x400d1cc4: __esp_system_init_fn_init_show_app_info at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_app_format/esp_app_desc.c:104
+[0m
+[0;33m--- 0x400d1da8: __esp_system_init_fn_init_efuse_show_app_info at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:41
+[0m
+[0;33m--- 0x400d3784: __esp_system_init_fn_init_heap at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/heap/heap_caps_init.c:25
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m--- 0x400d4964: __esp_system_init_fn_esp_timer_init_nonos at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_timer/src/esp_timer_init.c:27
+[0m
+[0;33m--- 0x400d43ec: __esp_system_init_fn_init_newlib at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/newlib_init.c:162
+[0m
+[0;33m--- 0x400d226c: __esp_system_init_fn_init_brownout at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:67
+[0m
+[0;33m--- 0x400d2278: __esp_system_init_fn_init_newlib_time at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:81
+[0m
+[0;33m--- 0x400d5820: __esp_system_init_fn_init_vfs_uart at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c:1080
+[0m
+[0;33m--- 0x400d6178: __esp_system_init_fn_init_vfs_console at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_vfs_console/vfs_console.c:222
+[0m
+[0;33m--- 0x400d4464: __esp_system_init_fn_init_newlib_stdio at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/newlib_init.c:207
+[0m
+[0;33m--- 0x400d47a4: __esp_system_init_fn_init_pthread at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/pthread/pthread.c:76
+[0m
+[0;33m--- 0x400d22b8: __esp_system_init_fn_init_flash at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:88
+[0m
+[0;33m--- 0x4016026c: __esp_system_init_fn_init_efuse at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:137
+[0m
+[0;33m--- 0x4013d2ec: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m--- 0x400ed514: s_set_default_wifi_log_level at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_init.c:89
+[0m
+[0;33m--- 0x4008f2d4: enable_timer_group0_for_calibration at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/rtc_time.c:197
+[0m
+[0;33m--- 0x400d30d0: esp_ipc_init at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/esp_ipc.c:113
+[0m
+[0;33m--- 0x400d2638: esp_reset_reason_init at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/soc/esp32/reset_reason.c:60
+[0m
+[0;33m--- 0x400e74d0: __esp_system_init_fn_esp_timer_init_os at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_timer/src/esp_timer.c:587
+[0m
+[0;33m--- 0x400d2284: __esp_system_init_fn_init_coexist at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:134
+[0m
+[0;33m--- 0x400d2298: __esp_system_init_fn_init_disable_rtc_wdt at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:143
+[0m
+[0;33m--- 0x400eb458: esp_netif_new_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed7c8: wifi_default_action_sta_start at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:72
+[0m
+[0;33m--- 0x400eac24: esp_netif_set_mac_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m--- 0x40115658: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m--- 0x400eb6ac: esp_netif_start_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m--- 0x400ebb68: esp_netif_update_default_netif_lwip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:317
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed7f8: wifi_default_action_sta_connected at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:86
+[0m
+[0;33m--- 0x400eaecc: esp_netif_up_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1647
+[0m
+[0;33m--- 0x400ebb68: esp_netif_update_default_netif_lwip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:317
+[0m
+[0;33m--- 0x400eb2ac: esp_netif_dhcpc_start_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1439
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed854: wifi_default_action_sta_got_ip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:128
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x401603f4: nvs_sec_provider_include_impl at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/nvs_sec_provider/nvs_sec_provider.c:285
+[0m
+[0;33m--- 0x401603fb: server_call at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:45
+[0m
+[0;33m--- 0x401603f8: server_call at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:43
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081114: call_start_cpu1 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/cpu_start.c:190
+[0m
+[0;33m--- 0x400d1d94: __esp_system_init_fn_init_efuse_check at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:31
+[0m
+[0;33m--- 0x400d222c: __esp_system_init_fn_init_show_cpu_freq at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:58
+[0m
+[0;33m--- 0x400d1cc4: __esp_system_init_fn_init_show_app_info at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_app_format/esp_app_desc.c:104
+[0m
+[0;33m--- 0x400d1da8: __esp_system_init_fn_init_efuse_show_app_info at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:41
+[0m
+[0;33m--- 0x400d3784: __esp_system_init_fn_init_heap at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/heap/heap_caps_init.c:25
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m--- 0x400d4964: __esp_system_init_fn_esp_timer_init_nonos at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_timer/src/esp_timer_init.c:27
+[0m
+[0;33m--- 0x400d43ec: __esp_system_init_fn_init_newlib at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/newlib_init.c:162
+[0m
+[0;33m--- 0x400d226c: __esp_system_init_fn_init_brownout at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:67
+[0m
+[0;33m--- 0x400d2278: __esp_system_init_fn_init_newlib_time at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:81
+[0m
+[0;33m--- 0x400d5820: __esp_system_init_fn_init_vfs_uart at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c:1080
+[0m
+[0;33m--- 0x400d6178: __esp_system_init_fn_init_vfs_console at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_vfs_console/vfs_console.c:222
+[0m
+[0;33m--- 0x400d4464: __esp_system_init_fn_init_newlib_stdio at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/newlib/newlib_init.c:207
+[0m
+[0;33m--- 0x400d47a4: __esp_system_init_fn_init_pthread at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/pthread/pthread.c:76
+[0m
+[0;33m--- 0x400d22b8: __esp_system_init_fn_init_flash at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:88
+[0m
+[0;33m--- 0x4016026c: __esp_system_init_fn_init_efuse at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:137
+[0m
+[0;33m--- 0x4013d2ec: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m--- 0x400ed514: s_set_default_wifi_log_level at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_init.c:89
+[0m
+[0;33m--- 0x4008f2d4: enable_timer_group0_for_calibration at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/rtc_time.c:197
+[0m
+[0;33m--- 0x400d30d0: esp_ipc_init at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/esp_ipc.c:113
+[0m
+[0;33m--- 0x400d2638: esp_reset_reason_init at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/port/soc/esp32/reset_reason.c:60
+[0m
+[0;33m--- 0x400e74d0: __esp_system_init_fn_esp_timer_init_os at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_timer/src/esp_timer.c:587
+[0m
+[0;33m--- 0x400d2284: __esp_system_init_fn_init_coexist at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:134
+[0m
+[0;33m--- 0x400d2298: __esp_system_init_fn_init_disable_rtc_wdt at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:143
+[0m
+[0;33m--- 0x400eb458: esp_netif_new_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed7c8: wifi_default_action_sta_start at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:72
+[0m
+[0;33m--- 0x400eac24: esp_netif_set_mac_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m--- 0x40115658: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m--- 0x400eb6ac: esp_netif_start_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m--- 0x400ebb68: esp_netif_update_default_netif_lwip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:317
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0;33m--- 0x400ed7f8: wifi_default_action_sta_connected at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:86
+[0m
+[0;33m--- 0x400eaecc: esp_netif_up_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1647
+[0m
+[0;33m--- 0x400ebb68: esp_netif_update_default_netif_lwip at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:317
+[0m
+[0;33m--- 0x400eb2ac: esp_netif_dhcpc_start_api at /home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/esp_netif/lwip/esp_netif_lwip.c:1439
+[0m
+[0;33m--- 0x400d7088: wifi_event_handler at /home/arekstasko/sources/repos/PlantCare_Central_Distributer/main/services/WifiService/WIFI_Service.c:48
+[0m
+[0m

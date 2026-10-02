@@ -81,12 +81,6 @@ static int save_data(uint16_t conn_handle, uint16_t attr_handle, struct ble_gatt
             return BLE_ATT_ERR_UNLIKELY;
         }
 
-        printf("BLUETOOTH DATA ------------------------------------------");
-        printf("Name: %s\n", name);
-        printf("Password: %s\n", password);
-        printf("ID: %s\n", id);
-        printf("Address: %s\n", address);
-
         nvs_set_str(nvs_handle, "name", name);
         nvs_set_str(nvs_handle, "password", password);
         nvs_set_str(nvs_handle, "id", id);

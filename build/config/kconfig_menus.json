@@ -28067,6 +28067,34 @@
                 "id": "component-config-wi-fi-provisioning-manager",
                 "title": "Wi-Fi Provisioning Manager",
                 "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Limits how deeply nested arrays/objects can be before cJSON\nrejects to parse them. This is to prevent stack overflows.\nLower values use less stack, higher values allow deeper nesting.",
+                        "id": "CJSON_NESTING_LIMIT",
+                        "name": "CJSON_NESTING_LIMIT",
+                        "range": null,
+                        "title": "Maximum nesting depth for JSON parsing",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Limits the depth for circular reference detection during\nprinting/comparison operations. This prevents infinite loops\nand stack overflows when processing JSON structures with\ncircular references. Lower values use less stack.",
+                        "id": "CJSON_CIRCULAR_LIMIT",
+                        "name": "CJSON_CIRCULAR_LIMIT",
+                        "range": null,
+                        "title": "Maximum depth for circular reference detection",
+                        "type": "int"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-cjson",
+                "title": "cJSON",
+                "type": "menu"
             }
         ],
         "depends_on": null,

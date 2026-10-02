@@ -71,3 +71,4 @@ source "/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/usb/Kco
 source "/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/vfs/Kconfig"
 source "/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/wear_levelling/Kconfig"
 source "/home/arekstasko/sources/Espressif-IDE/esp-idf-v5.3.1/components/wifi_provisioning/Kconfig"
+source "/home/arekstasko/sources/repos/PlantCare_Central_Distributer/managed_components/espressif__cjson/Kconfig"
